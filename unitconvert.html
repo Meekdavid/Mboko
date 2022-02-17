@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel ="icon" href="logo/VI.png">
+    <link rel="stylesheet" href="unitconvert.css">
+</head>
+<body>
+    <main>
+        <div id="top">
+            <p>Metric/Imperial Unit Conversion</p>
+            <input type="number" id="inputNumber" value="20" style="height: 30px; border: none; font-size: larger;">
+        </div>
+        <div id="bottom">
+            <p style="font-weight: bold;">Length (Metre/Feet)</p>
+            <span id="a">20 Meters = 65.616 feet | 20 feet = 60.96 Meters</span>
+            <br>
+            <br>
+            <p  style="font-weight: bold;">Volume (Liters/Gallons)</p>
+            <span id="b">20 Liters = 5.284 gallons | 20 gallons = 75.708 Liters</span>
+            <br>
+            <br>
+            <p  style="font-weight: bold;">Mass (Kilograms/Pounds)</p>
+            <span id="c">20 Kilos = 44.092 Pounds | 20 Pounds = 9.074 Kilos</span>
+        </div>
+    </main>
+</body>
+<script>
+    let d = document.getElementById("inputNumber")
+    let e = document.getElementById("a")
+    d.oninput = function(){
+        let a1 = (d.value)
+        let a2 = 0.305*(d.value)
+        let a3 = (d.value)/0.305
+        e.textContent = (d.value) + " meters " + "= " + a2.toFixed(2) + " feet   " + "    |    " +  "        " + (d.value) + "   feet " + "= " + a3.toFixed(2) + " meters"
+    let f = document.getElementById("inputNumber")
+    let g = document.getElementById("b")
+        let b1 = (f.value)
+        let b2 = 0.264*(f.value)
+        let b3 = (f.value)/0.264
+        g.textContent = (f.value) + " liters " + "= " + b2.toFixed(2) + " gallons   " + "    |    " +  "        " + (f.value) + "   gallons " + "= " + b3.toFixed(2) + " liters"
+    let h = document.getElementById("inputNumber")
+    let i = document.getElementById("c")
+        let c1 = (h.value)
+        let c2 = 2.205*(h.value)
+        let c3 = (h.value)/2.205
+        i.textContent = (h.value) + " kilos " + "= " + c2.toFixed(2) + " pounds   " + "    |    " +  "        " + (h.value) + "   pounds " + "= " + c3.toFixed(2) + " kilos"
+    }
+    
+</script>
+</html>
