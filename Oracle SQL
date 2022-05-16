@@ -15,3 +15,66 @@ https://embedwistia-a.akamaihd.net/deliveries/e2884f59a6258a595bd88256f27adc454b
 
 
 https://app.pluralsight.com/library/
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hello " + name);
+            Console.ReadKey();
+
+            Findsquareroot();
+            inputforsquareroot();
+            find_sqrt();
+
+            Console.ReadLine();
+
+        }
+
+        static void Findsquareroot()
+        {
+
+
+            double x = 5.0;
+            double y;
+            y = Math.Sqrt(x);
+            Console.WriteLine("y =" + y);
+        }
+
+        static void inputforsquareroot()
+        {
+            Console.WriteLine("Enter a number");
+            double x = Convert.ToInt32(Console.ReadLine());
+            double y = Math.Sqrt(x);
+            Console.WriteLine("The value of y =" + y);
+            Console.ReadKey();
+        }
+
+        static double find_sqrt()
+        {
+            Console.WriteLine("Enter a number");
+            double x = Convert.ToInt32(Console.ReadLine());
+            double y = Math.Sqrt(x);
+            Console.WriteLine(y + " is the square root of x");
+            return 0;
+
+
+        }
+    }
+}
+   
+
+
+
