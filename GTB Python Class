@@ -15,3 +15,11 @@ if name == 'amaka':
 if password == 'money':
     print('amaka did not disappoint')
 else: print('amaka disappoint')
+
+
+
+b =['a','b','c']
+if 'b' in b:
+    print('yes')
+else:
+    print('no')
