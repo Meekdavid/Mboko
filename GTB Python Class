@@ -4,3 +4,14 @@ length=len(my_name)
 print('what is your age?')
 my_age=input()
 print('the length of ' + my_name + ' ' + 'is ' + str((length)) + ' ' + 'and my age is ' + str(int(my_age)))
+
+
+print('please, enter your name')
+name = input()
+print('please, enter your password')
+password = input()
+if name == 'amaka':
+    print('Hello Folks')
+if password == 'money':
+    print('amaka did not disappoint')
+else: print('amaka disappoint')
