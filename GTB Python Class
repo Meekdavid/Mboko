@@ -52,3 +52,9 @@ elif age<100:
     print('You are not Alice, Girl.')
 else:
     print('No condition met')
+
+
+
+print('My name is')
+for i in range(5):
+    print('Jimmy Five Times(' + str(i) + ')')
