@@ -1,0 +1,6 @@
+print('what is your name?')
+my_name=input()
+length=len(my_name)
+print('what is your age?')
+my_age=input()
+print('the length of ' + my_name + ' ' + 'is ' + str((length)) + ' ' + 'and my age is ' + str(int(my_age)))
