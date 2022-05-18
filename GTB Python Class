@@ -86,3 +86,9 @@ for i in range(5, -1, -1):
 1
 0
 
+
+
+
+def caught_speeding(speed, is_birthday):
+    adjusted_speed = speed - 5 if is_birthday else speed
+    return "No Ticket" if adjusted_speed <= 60 else "Big Ticket" if adjusted_speed > 80 else "
