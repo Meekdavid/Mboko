@@ -24,3 +24,24 @@ let Oyinda = { talk: "Hossana", __proto__: Person};
 console.log(Oyinda.);
 -- 
 GMNSE, MIAENGDelta, Nigeria.
+
+
+function YorubaPerson(state) {
+  this.state = state;
+  this.facialFeatures = "Tribal marks";
+  this.favouriteFood = "Amala & Gbegiri";
+  this.favouritSpice = "Pepper";
+  
+}
+
+class IgboPerson {
+  constructor(state) {
+    this.state = state;
+    this.favouriteActivity = "Business";
+    this.favouriteThing = "Money";
+  }
+}
+
+let Damola = new YorubaPerson("Osun");
+let Chinedu = new IgboPerson("Anambra");
+console.log(Chinedu.favouriteActivity);
