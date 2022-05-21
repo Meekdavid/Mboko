@@ -1,0 +1,26 @@
+let GTStaff = {
+  worksAt: "GtBank",
+  branch: "Head Office",
+  favoriteColor: "Orange",
+  getBranch: function () {
+    alert(this.branch);
+  }
+};
+
+let Damola = {
+  __proto__: GTStaff
+};
+
+let Deji = {
+  __proto__: GTStaff
+};
+
+console.log("Damola's Branch:", Damola.branch);
+console.log("Deji's Branch:", Deji.branch);
+
+
+let Person = { talk: "Halleluyah", hairColor: "brown", speakUp: function () { alert(this.talk); }, showParentObject: function () { console.log(this); }};
+let Oyinda = { talk: "Hossana", __proto__: Person};
+console.log(Oyinda.);
+-- 
+GMNSE, MIAENGDelta, Nigeria.
