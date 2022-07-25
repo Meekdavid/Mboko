@@ -1,4 +1,4 @@
-David David effusing efficient Mboko
+David David effusing efficient Mbok
 let express = require('express');
 let app = express();
 let ejs = require('ejs');
